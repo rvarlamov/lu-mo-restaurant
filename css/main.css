@@ -1,0 +1,392 @@
+:root {
+  --main-color: black;
+  --red-color: #480d0d;
+  --beige-color: #f5e8d0;
+  --gray-color: #dedede;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+*,
+*::before,
+*::after {
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+P {
+  font-size: 12px;
+}
+
+main {
+  width: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 1400px;
+  padding: 20px 20px;
+  font-size: 12px;
+  z-index: 999;
+}
+
+.nav-block {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-block {
+  width: 119px;
+  height: 60px;
+  display: relative;
+  background-color: white;
+}
+
+.logo {
+  width: 119px;
+  height: 60px;
+  z-index: 10;
+  background-image: url(/images/logo.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  background-color: white;
+  height: 60px;
+}
+
+.navbar-buttons {
+  list-style: none;
+  display: flex;
+  /* padding: 40px 40px; */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  border-radius: 40px;
+  background-color: white;
+  height: 60px;
+  width: 300px;
+}
+
+.navbar-buttons a,
+.cart a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.cart-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image {
+  background-image: url(/images/hero-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 1400px;
+  height: 700px;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.hero-content {
+  /* padding: 350px 25px 0 25px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-locations-text {
+}
+
+.hero-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.4),
+    rgba(0, 0, 0, 0.99)
+  );
+  border-radius: 99px;
+  width: 92px;
+  height: 40px;
+}
+
+.hero-text {
+  width: 717px;
+  height: 225px;
+}
+
+.hero-text h1 {
+  color: white;
+  line-height: 75px;
+  font-weight: 500;
+}
+
+.hero-btn {
+  width: 170px;
+  height: 50px;
+}
+
+.hero-btn a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid beige;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.right-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: beige;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.blur-box {
+  width: 130px;
+  height: 130px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(5, 5, 5, 0.2);
+  border-radius: 20px;
+}
+
+.hero-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-elements {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-between;
+}
+
+/************************ FOOD SECTION ************************/
+
+.food-section {
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  margin-top: 20px;
+}
+
+.big-card {
+  width: 451px;
+  height: 180px;
+  background-color: var(--gray-color);
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+}
+
+.big-card-content {
+  width: 70%;
+  background-color: var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px;
+  gap: 40px;
+  color: var(--red-color);
+}
+
+.big-card-image {
+  background-image: url(/images/butter_chicken.jpg);
+  width: 160px;
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+}
+
+/************************ FAVORITES SECTION ************************/
+
+.favorites {
+  width: 100%;
+  height: 1180px;
+  margin-top: 50px;
+  background-color: var(--gray-color);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.favorites h2 {
+  text-align: center;
+  color: var(--red-color);
+  padding: 60px 0 0 0;
+}
+
+.card {
+  width: 332px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card-content-wrapper {
+  padding: 11px;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 332px;
+  height: 45%;
+}
+
+.price-weight-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-weight-row h5 {
+  background-color: var(--gray-color);
+  padding: 2px 7px;
+  border-radius: 20px;
+} */
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--red-color);
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+#info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: var(--gray-color);
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.cards-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#explore-button {
+  /* margin-top: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--red-color);
+  width: 210px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: solid var(--red-color) 2px;
+}
+
+.catering-banner {
+  margin-top: 50px;
+  background-image: url(/images/henrique-felix-dMFIBmDYaIQ-unsplash.jpg);
+  width: 1400px;
+  height: 420px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+
+.cart-items li {
+  list-style: none;
+}
+
+.cart-items {
+  display: block;
+  background: beige;
+  position: absolute;
+  top: 80%;
+  width: 26%;
+  right: 0;
+}
